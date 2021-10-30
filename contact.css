@@ -9,7 +9,7 @@ html, body, form, span, h1 {
 
 h1 {
   width: 100%;
-  background: #03A9F4;
+  background: #2196F3;
   padding: 20px;
   color: white;
   -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
@@ -60,7 +60,7 @@ textarea {
 
 input:focus::-webkit-input-placeholder,
 textarea:focus::-webkit-input-placeholder {
-  color: #03A9F4;
+  color: #2196F3;
 }
 
 input:focus, input:valid,
@@ -166,7 +166,7 @@ button {
   transition: transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   transition: transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), -webkit-transform 0.2s cubic-bezier(0.64, 0.09, 0.08, 1), -webkit-box-shadow 0.2s cubic-bezier(0.64, 0.09, 0.08, 1);
   border: none;
-  background: #03A9F4;
+  background: #2196F3;
   cursor: pointer;
   border-radius: 3px;
   padding: 6px;
@@ -184,18 +184,6 @@ button:hover {
           box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
 
-/*a {
-  display: inline-block;
-  width: 100%;
-  margin-top: 50px;
-  text-align: center;
-  font-family: 'roboto', sans-serif;
-  text-decoration: none;
-  color: $base;
-  i {
-    margin-right: 5px;
-  }
-}*/
 a {
   width: 42px;
   height: 42px;

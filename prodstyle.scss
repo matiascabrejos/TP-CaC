@@ -1,3 +1,8 @@
+$primary-color: #2196F3;
+$secondary-color: #1976D2;
+$primary-text: #212121;
+$accent-color: #FF4081;
+
 *,
 *::before,
 *::after {
@@ -32,6 +37,7 @@ img {
   height: auto;
   max-width: 100%;
   vertical-align: middle;
+  padding: 10px;
 }
 
 .btn {
@@ -45,7 +51,7 @@ img {
   width: 100%;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
+  background: $primary-color;
 }
 
 .btn:hover {
@@ -77,6 +83,10 @@ img {
   }
 }
 
+img {
+  background-color: $primary-color;
+}
+
 .card {
   background-color: white;
   border-radius: 0.25rem;
@@ -88,11 +98,11 @@ img {
 
 .card_content {
   padding: 1rem;
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  background: white;
 }
 
 .card_title {
-  color: #ffffff;
+  color: $primary-text;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -101,7 +111,7 @@ img {
 }
 
 .card_text {
-  color: #ffffff;
+  color: $primary-text;
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;    
