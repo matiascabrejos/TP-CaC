@@ -44,11 +44,16 @@ body {
 }
 
 h1 {
-  font-family: 'Nunito', sans-serif;
   margin: 0;
   font-weight: lighter;
   color: $primary-text;
   font-size: 3rem;
+  padding-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
 }
 
 p {

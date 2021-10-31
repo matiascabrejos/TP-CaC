@@ -1,5 +1,5 @@
 .main {
-  padding: 60px 0 60px 0;
+  padding: 60px 0 140px 0;
 }
 
 :root {
@@ -55,7 +55,7 @@ h2 {
   margin-bottom: 5px;
 }
 
-.form-control input {
+.form-control input, textarea {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
@@ -63,9 +63,10 @@ h2 {
   padding: 10px;
   font-size: 14px;
   border-bottom: 1px solid #2196F3;
+  padding-top: 30px;
 }
 
-.form-control input:focus {
+.form-control input:focus, textarea:focus {
   outline: 0;
 }
 
@@ -140,4 +141,4 @@ h2 {
     max-height: 500px;
   }
 }
-/*# sourceMappingURL=stylo.css.map */
+/*# sourceMappingURL=contactstyle.css.map */
