@@ -192,8 +192,14 @@ p {
   padding: 0;
 }
 
+nav i {
+  padding-right: 10px;
+}
+
 .nav {
-  border-bottom: 1px solid #eef1f6;
+  border-bottom: 1px solid #212121;
+  background-color: #212121;
+  padding: 1.5rem;
 }
 
 .nav__toggle {
@@ -205,7 +211,7 @@ p {
 
 .nav__toggle svg {
   width: 1.5rem;
-  fill: #2a324b;
+  fill: white;
 }
 
 .nav__toggle .close {
@@ -213,7 +219,7 @@ p {
 }
 
 .nav__toggle .menu {
-  margin-top: 0.2rem;
+  margin-top: 0;
 }
 
 .nav__checkbox {
@@ -232,7 +238,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
 }
 
 .nav__menu li {
@@ -247,13 +252,13 @@ p {
 
 .nav__menu a {
   text-decoration: none;
-  color: #212121;
+  color: white;
   font-size: 1.2rem;
 }
 
 .nav__menu svg {
   width: 1.5rem;
-  fill: #2a324b;
+  fill: white;
 }
 
 #nav__checkbox:checked ~ ul.nav__menu li {
@@ -300,6 +305,112 @@ p {
     width: 90%;
     height: 100%;
     max-height: 500px;
+  }
+}
+
+section {
+  padding: 30px 0;
+  /* min-height: 100vh;*/
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-area {
+  border-bottom: 1px solid #353C46;
+}
+
+.contact-content p {
+  font-size: 15px;
+  margin: 30px 0 60px;
+  position: relative;
+}
+
+.contact-content p::after {
+  background: #353C46;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 80%;
+}
+
+.contact-content h6 {
+  color: #8b9199;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.contact-content span {
+  color: #353c47;
+  margin: 0 10px;
+}
+
+.contact-social {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-social > ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.contact-social ul li a {
+  border: 1px solid #8b9199;
+  color: #8b9199;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  padding-top: 10px;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  width: 40px;
+}
+
+.contact-social ul li a:hover {
+  border: 1px solid #FAB702;
+  color: #FAB702;
+}
+
+section, footer {
+  background: #212121;
+  color: white;
+}
+
+footer p {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+}
+
+.in-flex {
+  display: inline-block;
+  margin: 20px;
+}
+
+.in-flex i {
+  margin-bottom: 8px;
+}
+
+.in-flex h4 {
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1000px) {
+  .in-flex {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

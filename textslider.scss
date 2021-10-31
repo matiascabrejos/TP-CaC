@@ -1,10 +1,18 @@
+$primary-color: #2196F3;
+$secondary-color: #1976D2;
+$primary-text: #212121;
+$secondary-text: #757575;
+$accent-color: #FF4081;
+$shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 * {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  background: #f1f1f1f1;
+  background: $primary-text;
+  color: white;
 }
 
 /* Slides */
@@ -16,7 +24,7 @@ body {font-family: Verdana, sans-serif; margin:0}
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
-    background: #f1f1f1f1;
+    background: white;
 }
 
 /* The dots/bullets/indicators */

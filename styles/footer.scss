@@ -1,0 +1,117 @@
+$primary-color: #2196F3;
+$secondary-color: #1976D2;
+$primary-text: #212121;
+$secondary-text: #757575;
+$accent-color: #FF4081;
+$shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+body {font-family: Verdana, sans-serif; margin:0}
+
+
+section {
+    padding: 30px 0;
+   /* min-height: 100vh;*/
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .contact-area {
+  border-bottom: 1px solid #353C46;
+  }
+  
+  .contact-content p {
+  font-size: 15px;
+  margin: 30px 0 60px;
+  position: relative;
+  }
+  
+  .contact-content p::after {
+  background: #353C46;
+  bottom: -30px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 80%;
+  }
+  
+  .contact-content h6 {
+  color: #8b9199;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  }
+  
+  .contact-content span {
+  color: #353c47;
+  margin: 0 10px;
+  }
+  
+  .contact-social {
+  margin-top: 10px;
+  text-align: center;
+  }
+  
+  .contact-social > ul {
+  display: inline-flex;
+  }
+  
+  .contact-social ul li a {
+  border: 1px solid #8b9199;
+  color: #8b9199;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  padding-top: 10px;
+  transition: all 0.4s ease 0s;
+  width: 40px;
+  }
+  
+  .contact-social ul li a:hover {
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  }
+  
+  
+  section, footer {
+  background: $primary-text;
+  color: white;
+  }
+  
+  footer p {
+  padding: 40px 0;
+  text-align: center;
+  }
+  
+  .about {
+    text-align: center;
+  }
+  
+  .in-flex {
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .in-flex i {
+    margin-bottom: 8px;
+  }
+  
+  .in-flex h4 {
+    margin-bottom: 8px;
+  }
+  
+  @media only screen and (min-width: 360px) and (max-width: 1000px) {
+    .in-flex {
+      display: block;
+    }
+  }
+
+  @media screen and (device-aspect-ratio: 40/71) {
+    footer p {
+      font-size: 14px;
+      margin: 0 5px 0 5px;
+    }
+  }

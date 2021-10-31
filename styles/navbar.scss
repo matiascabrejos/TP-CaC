@@ -1,0 +1,110 @@
+$primary-color: #2196F3;
+$secondary-color: #1976D2;
+$primary-text: #212121;
+$secondary-text: #757575;
+$accent-color: #FF4081;
+$shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {font-family: Verdana, sans-serif; margin:0}
+
+nav i {
+  padding-right: 10px;
+}
+
+.nav {
+  border-bottom: 1px solid $primary-text;
+  background-color: $primary-text;
+  padding: 1.5rem;
+
+  &__toggle {
+    position: absolute;
+    cursor: pointer;
+    margin: 0rem 1rem;
+    right: 0;
+
+    svg {
+      width: 1.5rem;
+      fill: white;
+    }
+
+    .close {
+      display: none;
+    }
+
+    .menu {
+      margin-top: 0;
+    }
+  }
+
+  &__checkbox {
+    display: none;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center; 
+
+    li {
+      list-style: none;
+      display: none;
+
+      &:first-child {
+        margin-right: auto;
+        display: block;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    svg {
+      width: 1.5rem;
+      fill: white;
+    }
+  }
+}
+
+// Toggle the hamburger menu in mobile view
+#nav__checkbox:checked ~ ul.nav__menu li {
+  display: block;
+}
+
+//Change from menu to close icon on tap
+#nav__checkbox:checked ~ label.nav__toggle .close {
+  display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+  display: none;
+}
+
+// Desktop view
+@media only screen and (min-width: 560px) {
+  .nav {
+    &__toggle {
+      display: none;
+    }
+
+    &__menu {
+      flex-direction: row;
+
+      li {
+        display: block;
+      }
+    }
+  }
+}

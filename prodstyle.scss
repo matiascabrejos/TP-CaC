@@ -13,13 +13,18 @@ html {
   background-color: #ecf9ff;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   color: #272727;
   font-family: 'Quicksand', serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-  padding: 1rem;
+    
 }
 
 .main{
@@ -31,6 +36,7 @@ h1 {
     font-size: 24px;
     font-weight: 400;
     text-align: center;
+    padding-top: 14px;
 }
 
 img {
@@ -69,6 +75,10 @@ img {
 .cards_item {
   display: flex;
   padding: 1rem;
+}
+
+.card_title {
+  padding-bottom: 4px;
 }
 
 @media (min-width: 40rem) {

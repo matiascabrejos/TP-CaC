@@ -8,7 +8,9 @@ $invalid: #E91E63;
 $width: 400px;
 $cubic: cubic-bezier(.64,.09,.08,1);
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.main {
+    padding: 60px 0 60px 0;
+}
 
 :root{
     --succes-color: #2ecc71;;
@@ -18,24 +20,26 @@ $cubic: cubic-bezier(.64,.09,.08,1);
 
 *{
     box-sizing: border-box;
-}
-
-body{
-
-    background-color: #f9fafb;
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    padding: 0;
     margin: 0;
 }
+
+
+h1 {
+    width: 100%;
+    background: $primary-color;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.05);
+    border-radius: 3px 3px 0 0;
+  }
 
 .container{
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     width: 600px;
+    margin: auto;
 }
 
 h2{
@@ -44,7 +48,8 @@ h2{
 }
 
 .form{
-    padding: 30px 40px;
+    padding: 10px 20px;
+    margin: auto;
 }
 
 .form-control{
@@ -120,6 +125,26 @@ h2{
   
   .alt-send-button:hover {
     transform: translate3d(0px, -29px, 0px);
+  }
+
+  @media only screen and (min-width: 360px) and (max-width: 1000px) {
+    .container {
+    position: relative;
+    z-index: 99;
+    width: 90%;
+    height: 100%;
+    max-height: 500px;
+    }
+  }
+
+  @media screen and (device-aspect-ratio: 40/71) {
+    .container {
+      position: relative;
+      z-index: 99;
+      width: 90%;
+      height: 100%;
+      max-height: 500px;
+    }
   }
 
 
