@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylo.css">
+    <script src="https://use.fontawesome.com/6245b6e28f.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <form id="form" class="form">
+        <h2>Register With Us</h2>
+        <div class="form-control">
+            <input type="text" id="username" placeholder="Nombre">
+            <small class="err">Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="text" id="email" placeholder="Email">
+            <small class="err">Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="password" id="password" placeholder="Enter password">
+            <small class="err">Error Message</small>
+        </div>
+        <div class="form-control">
+            <input type="password" id="password2" placeholder="Enter password again">
+            <div class="error"><small class="err">Error Message</small></div>
+        </div>
+        <button class="send-button" value="SEND">
+          <div class="alt-send-button">
+            <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+          </div>
+    </form>
+</div>
+
+<script src="validation.js"></script>
+</body>
+</html>
