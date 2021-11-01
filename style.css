@@ -18,6 +18,10 @@ body {
 }
 
 .card {
+  font-family: Verdana, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #212121;
   display: block;
   -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.374, 0.019, 0.035, 1.861);
   transition: -webkit-transform 0.1s cubic-bezier(0.374, 0.019, 0.035, 1.861);
@@ -59,6 +63,7 @@ h1 {
 h2 {
   text-align: center;
   padding-top: 10px;
+  color: #212121;
 }
 
 p {
@@ -116,6 +121,8 @@ p {
 }
 
 .hero-right {
+  font-family: Verdana, sans-serif;
+  color: #212121;
   -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
           animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   position: relative;
@@ -187,112 +194,6 @@ p {
   }
 }
 
-/*   border radius */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-nav i {
-  padding-right: 10px;
-}
-
-.nav {
-  border-bottom: 1px solid #212121;
-  background-color: #212121;
-  padding: 1.5rem;
-}
-
-.nav__toggle {
-  position: absolute;
-  cursor: pointer;
-  margin: 0rem 1rem;
-  right: 0;
-}
-
-.nav__toggle svg {
-  width: 1.5rem;
-  fill: white;
-}
-
-.nav__toggle .close {
-  display: none;
-}
-
-.nav__toggle .menu {
-  margin-top: 0;
-}
-
-.nav__checkbox {
-  display: none;
-}
-
-.nav__menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav__menu li {
-  list-style: none;
-  display: none;
-}
-
-.nav__menu li:first-child {
-  margin-right: auto;
-  display: block;
-}
-
-.nav__menu a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.2rem;
-}
-
-.nav__menu svg {
-  width: 1.5rem;
-  fill: white;
-}
-
-#nav__checkbox:checked ~ ul.nav__menu li {
-  display: block;
-}
-
-#nav__checkbox:checked ~ label.nav__toggle .close {
-  display: block;
-}
-
-#nav__checkbox:checked ~ label.nav__toggle .menu {
-  display: none;
-}
-
-@media only screen and (min-width: 560px) {
-  .nav__toggle {
-    display: none;
-  }
-  .nav__menu {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .nav__menu li {
-    display: block;
-  }
-}
-
 @media only screen and (min-width: 360px) and (max-width: 1000px) {
   .hero-image {
     position: relative;
@@ -310,112 +211,6 @@ nav i {
     width: 90%;
     height: 100%;
     max-height: 500px;
-  }
-}
-
-section {
-  padding: 30px 0;
-  /* min-height: 100vh;*/
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.contact-area {
-  border-bottom: 1px solid #353C46;
-}
-
-.contact-content p {
-  font-size: 15px;
-  margin: 30px 0 60px;
-  position: relative;
-}
-
-.contact-content p::after {
-  background: #353C46;
-  bottom: -30px;
-  content: "";
-  height: 1px;
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translate(-50%);
-          transform: translate(-50%);
-  width: 80%;
-}
-
-.contact-content h6 {
-  color: #8b9199;
-  font-size: 15px;
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.contact-content span {
-  color: #353c47;
-  margin: 0 10px;
-}
-
-.contact-social {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.contact-social > ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.contact-social ul li a {
-  border: 1px solid #8b9199;
-  color: #8b9199;
-  display: inline-block;
-  height: 40px;
-  margin: 0 10px;
-  padding-top: 10px;
-  -webkit-transition: all 0.4s ease 0s;
-  transition: all 0.4s ease 0s;
-  width: 40px;
-}
-
-.contact-social ul li a:hover {
-  border: 1px solid #FAB702;
-  color: #FAB702;
-}
-
-section, footer {
-  background: #212121;
-  color: white;
-}
-
-footer p {
-  padding: 40px 0;
-  text-align: center;
-}
-
-.about {
-  text-align: center;
-}
-
-.in-flex {
-  display: inline-block;
-  margin: 20px;
-}
-
-.in-flex i {
-  margin-bottom: 8px;
-}
-
-.in-flex h4 {
-  margin-bottom: 8px;
-}
-
-@media only screen and (min-width: 360px) and (max-width: 1000px) {
-  .in-flex {
-    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */

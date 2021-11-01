@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  color: #272727;
+  color: $primary-text;
   font-family: 'Quicksand', serif;
   font-style: normal;
   font-weight: 400;
@@ -33,10 +33,11 @@ body {
 }
 
 h1 {
+    color: $primary-text;
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 800;
     text-align: center;
-    padding-top: 14px;
+    padding: 30px 0 10px 0;
 }
 
 img {
@@ -61,7 +62,7 @@ img {
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: $secondary-color;
 }
 
 .cards {
@@ -70,11 +71,13 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+  color: $primary-text;
 }
 
 .cards_item {
   display: flex;
   padding: 1rem;
+  color: $primary-text;
 }
 
 .card_title {
