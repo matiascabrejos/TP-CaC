@@ -1,7 +1,7 @@
-$primary-color: #2196F3;
-$secondary-color: #1976D2;
+$primary-color: #2196f3;
+$secondary-color: #1976d2;
 $primary-text: #212121;
-$accent-color: #FF4081;
+$accent-color: #ff4081;
 
 *,
 *::before,
@@ -20,24 +20,23 @@ html {
 
 body {
   color: $primary-text;
-  font-family: 'Quicksand', serif;
+  font-family: "Quicksand", serif;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0;
-    
 }
 
-.main{
+.main {
   max-width: 1200px;
   margin: 0 auto;
 }
 
 h1 {
-    color: $primary-text;
-    font-size: 24px;
-    font-weight: 800;
-    text-align: center;
-    padding: 30px 0 10px 0;
+  color: $primary-text;
+  font-size: 24px;
+  font-weight: 800;
+  text-align: center;
+  padding: 30px 0 10px 0;
 }
 
 img {
@@ -127,49 +126,49 @@ img {
   color: $primary-text;
   font-size: 0.875rem;
   line-height: 1.5;
-  margin-bottom: 1.25rem;    
+  margin-bottom: 1.25rem;
   font-weight: 400;
 }
-  .product-grid,
-  .product-grid .product-image4 {
-    position: relative
-  }
-  .product-grid {
-    font-family: Poppins, sans-serif;
-    text-align: center;
-    border-radius: 5px;
-    overflow: hidden;
-    z-index: 1;
-    transition: all .2s ease 0s
-  }
+.product-grid,
+.product-grid .product-image4 {
+  position: relative;
+}
+.product-grid {
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.2s ease 0s;
+}
 
-  .product-grid .product-image4 a {
-    display: block
-  }
-  .product-grid .product-image4 img {
-    width: 100%;
-    height: auto
-  }
-  .product-grid .pic-1 {
-    opacity: 1;
-    transition: all .5s ease-out 0s
-  }
-  .product-grid:hover .pic-1 {
-    opacity: 0
-  }
-  .product-grid .pic-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: all .5s ease-out 0s
-  }
-  .product-grid:hover .pic-2 {
-    opacity: 1
-  }
+.product-grid .product-image4 a {
+  display: block;
+}
+.product-grid .product-image4 img {
+  width: 100%;
+  height: auto;
+}
+.product-grid .pic-1 {
+  opacity: 1;
+  transition: all 0.5s ease-out 0s;
+}
+.product-grid:hover .pic-1 {
+  opacity: 0;
+}
+.product-grid .pic-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.5s ease-out 0s;
+}
+.product-grid:hover .pic-2 {
+  opacity: 1;
+}
 
-  @media only screen and (max-width:990px) {
-    .product-grid4 {
-      margin-bottom: 30px
-    }
+@media only screen and (max-width: 990px) {
+  .product-grid4 {
+    margin-bottom: 30px;
   }
+}

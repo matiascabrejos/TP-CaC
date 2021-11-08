@@ -1,10 +1,9 @@
-$primary-color: #2196F3;
-$secondary-color: #1976D2;
+$primary-color: #2196f3;
+$secondary-color: #1976d2;
 $primary-text: #212121;
 $secondary-text: #757575;
-$accent-color: #FF4081;
-$shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-
+$accent-color: #ff4081;
+$shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 
 *,
 *::before,
@@ -14,7 +13,10 @@ $shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
   padding: 0;
 }
 
-body {font-family: Verdana, sans-serif; margin:0}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
 
 nav i {
   padding-right: 10px;
@@ -53,7 +55,7 @@ nav i {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    align-items: center; 
+    align-items: center;
 
     li {
       list-style: none;
